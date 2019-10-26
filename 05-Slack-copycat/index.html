@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slack prototype</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- TODO: Slack copycat markup -->
+    <div class="d-flex">
+      <div class="organizations-sidebar">
+        <h2 class="organization active">LU</h2>
+        <h2 class="organization">SL</h2>
+      </div>
+
+      <div class="conversations-sidebar">
+        <h2>Les Ugly</h2>
+        <div class="person">
+          <div class="online-badge">
+            <span>neymar-jr</span>
+          </div>
+        </div>
+        <div class="chat-section">
+          <div class="chat-section-header">
+            <h3>Channels</h3>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="channel">
+            <span><i class="fab fa-slack-hash"></i> general</span>
+          </div>
+          <div class="channel">
+            <span><i class="fab fa-slack-hash"></i> help me look nicer!</span>
+          </div>
+          <div class="channel active">
+
+            <span><i class="fab fa-slack-hash"></i> face design</span>
+          </div>
+          <div class="channel">
+            <span><i class="fas fa-lock"></i> friday-make-up</span>
+          </div>
+          <div class="channel">
+            <span><i class="fas fa-lock"></i> face-hiding</span>
+          </div>
+        </div>
+        <div class="flex-grow-1">
+          <div class="chat-section">
+            <div class="chat-section-header">
+              <h3>Direct Messages</h3>
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="person">
+              <div class="online-badge"></div>
+              <span>Pimples</span>
+            </div>
+            <div class="person">
+              <div class="online-badge"></div>
+              <span>Michael Jordan</span>
+            </div>
+            <div class="person">
+              <div class="offline-badge"></div>
+              <span>Mick Jagger</span>
+            </div>
+            <div class="person">
+              <div class="offline-badge"></div>
+              <span>Bad bad Baby</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat-container">
+        <div class="chat-header">
+          <h1><i class="fab fa-slack-hash"></i> design your face</h1>
+        </div>
+        <div class="chat-conversations">
+          <div class="message">
+            <img src="http://cdn.espn.com.br/thumb/622_6a66e904-e6d6-39eb-bb68-035f01fe379b.jpg" alt="">
+            <div class="message-content">
+              <p><strong>Neymar Jr</strong></p>
+              <p>Hey everyone 👋 We’ve just launched a new Les Ugly kit! <strong>LU Kit</strong> 🚀 👉  <a href="https://uikit.lewagon.com/">https://uikit.lesugly.com/</a></p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="https://www.aconsciousrethink.com/wp-content/uploads/2019/03/ugly-man-702x336.jpg" alt="">
+            <div class="message-content">
+              <p><strong>Pimples</strong></p>
+              <p>yay! 🤘</p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="https://ichef.bbci.co.uk/news/660/cpsprodpb/1354F/production/_86838197_misonsereap.jpg" alt="">
+            <div class="message-content">
+              <p><strong>Michael Jordan</strong></p>
+              <p>That looks great, why don't you add a <code>.card</code> like on dribbble with a cool hover effect? 😎</p>
+            </div>
+          </div>
+          <div class="message">
+            <img src="https://i2-prod.mirror.co.uk/incoming/article1346797.ece/ALTERNATES/s810/Mugshot%20of%20Alan%20Dale%20Lee%20from%202009" alt="">
+            <div class="message-content">
+              <p><strong>Mick jagger</strong></p>
+              <p>Does it work on Linux? 🤓</p>
+            </div>
+          </div>
+
+          <div class="message">
+            <img src="https://images.newrepublic.com/4aa3c4e7c6c23682dff17fd422749bcd840a822b.jpeg?w=1400&q=65&dpi=2&fm=pjpg&h=579" alt="">
+            <div class="message-content">
+              <p><strong>Bad bad Baby</strong></p>
+              <p>Hi face designers! There's nothing like a GOLDEN SHOWER in the morning to give your facial skin the treatment it deserves!</p>
+
+              <p>- Here's a tutotrial video of one of my favorite Goldens:</p>
+
+              <p>👉 <a href="https://www.youtube.com/watch?v=U5kF_sFj6y4">click</a></p>
+              <p>Hope you’ll enjoy 📺 !</p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <form action="">
+            <input type="text" class="form-control" placeholder="Type your message...">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
